@@ -1,0 +1,50 @@
+.sidebar {
+    width: 15%;
+    position: fixed;
+    overflow-x: auto;
+    min-height:100%;
+    border-right: 2px solid #e5e5e5;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left:-100%;
+    transition: .3s ease;
+    margin-right: 14px;
+z-index: 2000;
+  }
+  .sidebar.appear{
+    left: 0;
+  }
+  .logo-container {
+    margin-bottom: 4rem;
+  }
+  
+  .logo-container h1 {
+    margin-top: 1.3rem;
+  }
+  .bars{
+    left: 16%;
+    display: inline-block;
+    /* margin: 3px; */
+    /* margin-bottom: 30px; */
+    font-size: 25px;
+    color: #272b2cad;
+
+    cursor: pointer;
+    position: absolute;
+    top: 6.5%;
+    margin-right: 5px
+
+  }
+ @media(max-width:768px){
+    .sidebar{
+        width: 50%;
+        background-color: rgba(17, 1, 35, 1);
+        color: #fff;
+    }
+    .bars{
+        top: 2px;
+        left: 60%;
+    }
+ }

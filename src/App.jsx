@@ -4,6 +4,7 @@ import Product from "./Product/Product";
 import Sidebar from "./Sidbar/Sidebar";
 import Recommended from "./Recommendation/Recommendation";
 import products from "./db/data";
+import './App.css'
 import { useState } from "react";
 function App() {
   const [allProduct, setProduct] = useState(products);
